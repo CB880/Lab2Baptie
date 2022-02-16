@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="sheet.css" rel="stylesheet"/>
+    <title>Search</title>
+</head>
+<body>
+  <h1>What Can I Help You Find Today</h1>
+  <br>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="Register">Register Today</a>
+        <a class="nav-link" href="Search">Search</a>
+        <a class="nav-link" href="Login">Login</a>
+
+      </div>
+
+  </nav>
+
+<form action="{{ url_for('find') }}" method="post">
+  <div class="form-group">
+    <input name="query" type="text" placeholder="Search">
+  </div>
+
+  <div class = "form-group">
+    <button>Search</button>
+  </div>
+</form>
+
+</body>
+</html>
